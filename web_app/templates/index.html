@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive flower website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <script src="{% static 'js/style.js' %}"></script>
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">flower<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>fresh flowers</h3>
+        <span> natural & beautiful flowers </span>
+        <p>Flowers are happiness bringers. They are like a suave way to represent that you care and express your emotions, affection and adoration in the most beautiful manner. A flower arrangement is perfect for all occasions like birthday, anniversary, valentine’s day, or any occasion.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="{% static 'images/about-vid.mp4' %}" loop autoplay muted></video>
+            
+            <h3>best flower sellers</h3>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Let us convey your sentiment with the perfect gift of flowers. We deliver flower to all cities of Bangladesh. Our gift delivery service is famous for our exquisite and natural floral arrangements, which uses quality imported and local flowers, foliage and accompaniments. Bigger image and easy to read product description will help you select and order right flower bouquet. We can organize flower for wedding and other parties as well. Please contact us with your requirement and we will provide special quote with discounts.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        {% comment %} <img src="images/icon-1.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/icon-1.png' %}">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        {% comment %} <img src="images/icon-2.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/icon-2.png' %}">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        {% comment %} <img src="images/icon-3.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/icon-3.png' %}">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        {% comment %} <img src="images/icon-4.png" alt=""> {% endcomment %}
+        <img src="{% static 'images/icon-4.png' %}">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+   
+</section>
+
+<!-- icons section ends -->
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> latest <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-1.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-1.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 1200tk <span>1450tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-2.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-2.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 800tk <span>1050tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-3.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-3.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 1350tk <span>1500tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-4.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-4.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 600tk <span>900tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-17%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-5.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-5.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 890tk <span>1150tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-3%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-6.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-6.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 450tk <span>500tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-18%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-7.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-7.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 680tk <span>820tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-8.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-8.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 1200tk <span>1320tk</span> </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                {% comment %} <img src="images/img-9.jpg" alt=""> {% endcomment %}
+                <img src="{% static 'images/img-9.jpg' %}">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>flower pot</h3>
+                <div class="price"> 830tk <span>890tk</span> </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading"> customer's <span>review</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>The app it self Is good enough. The home page and search is great and intuitive. The only thing I don't like is that the location of the restaurants are not visible easily. You have to open another tab to see the location which might be a problem to new users as they don't know how far the restaurants are from there home. Except for that it's a great app.</p>
+        <div class="user">
+            {% comment %} <img src="images/pic-1.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/sakib.jpg' %}">
+            <div class="user-info">
+                <h3>Sakib</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>I've ordered from this flower shop several times, and I am never disappointed, never! The flowers are always fresh and delivered on time! This is my go to florist in the San Francisco area. Just beautiful!</p>
+        <div class="user">
+            {% comment %} <img src="images/pic-2.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/ibu.jpg' %}">
+            <div class="user-info">
+                <h3>Ibrahim Patwary</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    <p>This is my third time ordering with flower shop and rhey’ve all been beautiful. Delivered within a reasonable time. I will continue to use this flower shop.</p>
+        <div class="user">
+            {% comment %} <img src="images/pic-3.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/bayzid.jpg' %}">
+            <div class="user-info">
+                <h3>Bayzid</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+    
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> contact </span> us </h1>
+
+    <div class="row">
+
+        <form action="" method="POST">
+            {%csrf_token%}
+            <input type="text" placeholder="name" class="box" name="name">
+            <input type="email" placeholder="email" class="box" name="email">
+            <input type="number" placeholder="number" class="box" name="phone">
+            <textarea name="message" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            {% comment %} <img src="images/contact-img.svg" alt=""> {% endcomment %}
+            <img src="{% static 'images/contact-img.svg' %}">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Dhaka</a>
+            <a href="#">Narsingdi</a>
+            <a href="#">Narayangang</a>
+            <a href="#">Comilla</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+8801890326402</a>
+            <a href="#">tarikul15-3806@diu.edu.bd</a>
+            <a href="#">Dhaka,Bangladesh</a>
+            {% comment %} <img src="images/payment.png" alt=""> {% endcomment %}
+            <img src="{% static 'images/payment.png' %}">
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
